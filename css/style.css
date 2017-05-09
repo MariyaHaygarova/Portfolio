@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+#navBar {
+    height: 85px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav.horizontal ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav.horizontal li {
+    display: block;
+    float: left;
+    padding:0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #d12b52;
+}
+
+#leftNav {
+    float:left;
+    margin-left: 30px;
+}
+
+#leftNav ul li {
+    margin:26px 8px;
+    height:19px;
+}
+
+#rightNav {
+    float: right;
+    margin-right: 30px;
+}
+
+#rightNav ul li {
+    margin:20px 8px;
+    height:30px;
+}
+
+nav img {
+    width: 30px;
+}
+
+
+.facebook:hover {
+    background: #3B5998;
+    border-radius: 18px;
+    transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+}
+
+.twitter:hover {
+    background: #00aced;
+    border-radius: 18px;
+    transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+}
+
+.pinterest:hover {
+    background: #cb2027;
+    border-radius: 18px;
+    transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+}
+
+.instagram:hover {
+    background: #517fa4;
+    border-radius: 18px;
+    transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+}
+
+.dribbble:hover {
+    background: #ea4c89;
+    border-radius: 18px;
+    transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+}
+
+.linkedin:hover {
+    background: #007bb6;
+    border-radius: 18px;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+}
+#intro {
+    height:100vh;
+    width: 100%;
+    background-position: fixed;
+    background-color: pink;
+    background: url(https://themify.me/demo/themes/ultra/files/2015/05/88274311-1024x585.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+#mark, #details {
+    position: relative;
+}
+
+.site-title {
+    font-size: 5.063em;
+     margin-top: 20vh;
+    width: 350px;
+}
+.site-title a {
+    color: #d12b52;
+    text-shadow: 1px 1px #000;
+    -webkit-transition: color 300ms;
+    -moz-transition: color 300ms;
+    -o-transition: color 300ms;
+    transition: color 300ms;
+}
+.site-title a:hover {
+    color: #ff0084;
+}
+#details {
+    width: 316px;
+    top: -35px;
+    left: 100px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.5em;
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+#caption {
+    position: absolute;
+    bottom: 18vh;
+    right: 0;
+}
+
+#caption h2, #caption h3 {
+    background-color: rgba(6, 31, 69, 0.2);
+    color: #fff;
+    display: block;
+    float: right;
+    clear: both;
+    padding: 3px 5px;
+    margin: 0;
+}
+
+#caption h2 {
+    font-weight: 600;
+    font-size: 1.em;
+    font-style: italic;
+}
+
+#caption h3 {
+    font-weight: 200;
+    font-size: 1.3em;
+    margin-top: 2px;
+}
+
+.tile {
+    height: 350px;
+    overflow: hidden;
+}
+
+.overlay {
+    font-family: 'lobster', cursive;
+    font-size: 3em;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: rgba(6, 31, 69, 0.8);
+    z-index:50;
+    display: none;
+    margin-top:-350px;
+    pointer-events: none;
+}
+
+.overlay > div {
+    display: table; 
+    height: 350px; 
+    overflow: hidden;
+    width: 100%;
+}
+
+.overlay > div > div {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.overlay p {
+    text-align: center;
+    line-height: 1em;
+    padding: 0 20px;
+}
+
+.subtile, .subthumb {
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    z-index:0;
+}
+
+.subtile:hover {
+    -webkit-animation-name: zoomRotate;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    
+    -moz-animation-name: zoomRotate;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -moz-animation-fill-mode: forwards;
+    
+    animation-name: zoomRotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+    @-webkit-keyframes zoomRotate {
+        from {
+          -webkit-transform: scale(1, 1) rotate(0deg);
+        }
+        to {
+          -webkit-transform: scale(1.15, 1.15) rotate(3deg);
+        }
+    }
+
+    @-moz-keyframes zoomRotate {
+        from {
+          -moz-transform: scale(1, 1) rotate(0deg);
+        }
+        to {
+          -moz-transform: scale(1.15, 1.15) rotate(3deg);
+        }
+    }
+
+    @keyframes zoomRotate {
+        from {
+          transform: scale(1, 1) rotate(0deg);
+        }
+        to {
+          transform: scale(1.15, 1.15) rotate(3deg);
+        }
+    }
+
+
+
+/*artwork page*/
+.thumb {
+    height: 16.7vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+
+.subthumb:hover {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    
+    -moz-animation-name: zoom;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+    @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(1, 1);
+        }
+        to {
+          -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+
+    @-moz-keyframes zoom {
+        from {
+          -webkit-transform: scale(1, 1);
+        }
+        to {
+          -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+
+    @keyframes zoom {
+        from {
+          -webkit-transform: scale(1, 1);
+        }
+        to {
+          -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+
+#preview p {
+    color: #061f45;
+    padding-left: 5.2%;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'lobster', cursive;
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+#photoWrapper {
+    width: 90%;
+    margin: 0 auto;
+    height: 82vh;
+    overflow: auto;
+    position: relative;
+}
+
+#photo {
+    width: 100%;
+}
+
+#artCaption {
+    position: absolute;
+    top: 2%;
+    right: 0;
+}
+
+#artCaption h2, #artCaption h3 {
+    background-color: rgba(6, 31, 69, 0.7);
+    color: #fff;
+    display: block;
+    float: right;
+    padding: 3px 5px;
+    margin-right: 5%;
+}
+
+#artCaption h2 {
+    font-weight: 600;
+    font-size: 1em;
+    font-style: italic;
+}
+
+#artCaption h3 {
+    font-weight: 200;
+    font-size: .8em;
+    margin-top: -11px;
+}
+
+
+
+/*images*/
+.beauty-salon {
+    background: url("../images/cover3.jpg") no-repeat top;
+    background-size: cover;
+}
+
+.doner-kebap {
+    background-image: url("../images/doner_sandwich.jpg");
+}
+
+.media {
+    background-image: url("../images/forest.jpg");
+}
+
+.mimi-design {
+    background-image: url("../images/uugr3txnuc-noah-silliman-1.jpg");
+}
+
+.Hair-Dressing-Salon {
+    background-image: url("../images/Hair-4.jpg");
+}
+
+.catering {
+    background-image: url("../images/food5.jpg");
+}
+
+.judo-club {
+    background-image: url("../images/DSCN2957.jpg");
+}
+
+
+
+/*responsive from 575px to 899px*/
+@media screen and (max-width: 899px) and (min-width: 575px) {
+
+    #wrapper {
+        width: 100%;
+    }
+    
+    #mark {
+        margin: 0 auto;
+        margin-top: 140px;
+        display: block;
+    }
+
+    #details {
+        text-align: center;
+        margin: 0 auto;
+        left:0;
+        top:0;
+        margin-top: 20px;
+    }
+
+    #caption {
+        text-align: center;
+        margin: 0 auto;
+        bottom: auto;
+        right: auto;
+        position: relative;
+        width:500px;
+        margin-top: 50px;
+    }
+
+    #caption h2, #caption h3 {
+        display:inline-block;
+        margin: 0 auto;
+        position:relative;
+        float:none;
+    }
+
+    #caption h3 {
+        margin-top: 2px;
+    }
+
+    .tile, .thumb {
+        height: 450px;
+    }
+
+    .overlay {
+        height: 450px;
+        margin-top:-450px;
+
+    }
+
+    .subthumb:hover {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    animation-name: none !important;
+    }
+
+    #preview {
+        display: none;
+    }
+
+    .overlay > div {
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 574px) {
+    
+    #wrapper {
+        width: 100%;
+    }
+    .site-title {
+        font-size: 3em;
+        text-align: center;
+    }
+    #details {
+        text-align: center;
+        margin: 0 auto;
+        left:0;
+        top:0;
+        margin-top: 20px;
+    }
+
+    #caption, #preview {
+        display: none;
+    }
+
+    #leftNav {
+        display: none;
+    }
+
+    .thumb {
+        height: 350px;
+    }
+
+    .subthumb:hover {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        animation-name: none !important;
+    }
+
+}
